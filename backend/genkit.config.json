@@ -1,0 +1,19 @@
+{
+	"plugins": [
+		"@genkit-ai/genai-vercel",
+		[
+			"genkitx-ollama",
+			{
+				"models": [
+					{
+						"name": "gemma3:4b-it-qat",
+						"type": "generate"
+					}
+				],
+				"serverAddress": "http://127.0.0.1:11434"
+			}
+		]
+	],
+	"model": "ollama/gemma3:4b-it-qat",
+	"flows": ["./src/agent/agentRouter.ts"]
+}

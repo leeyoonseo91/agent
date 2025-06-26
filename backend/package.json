@@ -1,0 +1,26 @@
+{
+	"name": "genkit-ollama",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"start": "genkit start -- node src/index.js",
+		"dev": "nodemon src/index.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@genkit-ai/flow": "^0.5.17",
+		"@genkit-ai/googleai": "^1.13.0",
+		"cors": "^2.8.5",
+		"express": "^5.1.0",
+		"genkit": "^1.13.0",
+		"genkitx-ollama": "^1.13.0",
+		"helmet": "^8.1.0"
+	},
+	"type": "module",
+	"devDependencies": {
+		"nodemon": "^3.1.10"
+	}
+}
